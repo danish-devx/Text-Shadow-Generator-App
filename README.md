@@ -52,7 +52,7 @@ Through this project, I strengthened my ability to:
 Frontend Web Developer  
 
 🔗 GitHub: https://github.com/danish-devx  
-🌐 Portfolio: https://danish-devx.github.io/  
+
 
 ---
 
