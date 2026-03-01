@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <h1 class="text-center mb-5 fw-bold">Text Shadow Generator</h1>
+
+        <div class="row g-4 align-items-start">
+
+
+            <div class="col-lg-5 text-center">
+                <div class="preview-wrapper">
+                    <div class="text-preview" id="text">
+                        Shadow Text
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-7">
+                <div class="card shadow-sm p-4 border-0 rounded-4">
+
+                    <div class="mb-3">
+                        <label class="form-label">X-Axis</label>
+                        <input type="range" class="form-range" id="xRange" min="-50" max="50" value="5">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Y-Axis</label>
+                        <input type="range" class="form-range" id="yRange" min="-50" max="50" value="5">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Blur</label>
+                        <input type="range" class="form-range" id="blurRange" min="0" max="100" value="10">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Shadow Color</label>
+                        <input type="color" class="form-control form-control-color" id="colorPicker" value="#000000">
+                    </div>
+
+                    <h6 class="fw-bold">CSS Code</h6>
+
+                    <div class="code-box mb-3" id="cssCode">
+                        text-shadow: 5px 5px 10px #000000;
+                    </div>
+
+                    <button class="btn-gradient w-100" id="copyBtn">
+                        Copy CSS
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
